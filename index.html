@@ -1,0 +1,255 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio Système d'Information</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Header avec menu -->
+    <header id="header">
+        <div class="header-container">
+            <h2 class="logo">SI Portfolio</h2>
+            
+            <!-- Menu desktop -->
+            <nav class="nav-desktop">
+                <button class="nav-btn active" data-page="accueil">
+                    <i class="fas fa-home"></i>
+                    <span>Accueil</span>
+                </button>
+                <button class="nav-btn" data-page="tds">
+                    <i class="fas fa-file-alt"></i>
+                    <span>TDs</span>
+                </button>
+                <button class="nav-btn" data-page="cours">
+                    <i class="fas fa-book-open"></i>
+                    <span>Cours</span>
+                </button>
+                <button class="nav-btn" data-page="projets">
+                    <i class="fas fa-briefcase"></i>
+                    <span>Projets</span>
+                </button>
+                <button class="nav-btn" data-page="contact">
+                    <i class="fas fa-envelope"></i>
+                    <span>Contact</span>
+                </button>
+            </nav>
+
+            <!-- Bouton menu mobile -->
+            <button class="menu-toggle" id="menuToggle">
+                <i class="fas fa-bars"></i>
+            </button>
+        </div>
+
+        <!-- Menu mobile -->
+        <div class="nav-mobile" id="navMobile">
+            <button class="nav-mobile-btn active" data-page="accueil">
+                <i class="fas fa-home"></i>
+                <span>Accueil</span>
+            </button>
+            <button class="nav-mobile-btn" data-page="tds">
+                <i class="fas fa-file-alt"></i>
+                <span>TDs</span>
+            </button>
+            <button class="nav-mobile-btn" data-page="cours">
+                <i class="fas fa-book-open"></i>
+                <span>Cours</span>
+            </button>
+            <button class="nav-mobile-btn" data-page="projets">
+                <i class="fas fa-briefcase"></i>
+                <span>Projets</span>
+            </button>
+            <button class="nav-mobile-btn" data-page="contact">
+                <i class="fas fa-envelope"></i>
+                <span>Contact</span>
+            </button>
+        </div>
+    </header>
+
+    <!-- Contenu principal -->
+    <main class="main-container">
+        <!-- Page Accueil -->
+        <div id="accueil" class="page active">
+            <div class="hero">
+                <h1>Portfolio Système d'Information</h1>
+                <p>Bienvenue sur mon portfolio de SI ! Retrouvez tous mes TDs, cours et projets.</p>
+            </div>
+            
+            <div class="cards-grid">
+                <div class="card" data-navigate="tds">
+                    <i class="fas fa-file-alt card-icon"></i>
+                    <h3>TDs</h3>
+                    <p>Accéder à la section tds</p>
+                </div>
+                <div class="card" data-navigate="cours">
+                    <i class="fas fa-book-open card-icon"></i>
+                    <h3>Cours</h3>
+                    <p>Accéder à la section cours</p>
+                </div>
+                <div class="card" data-navigate="projets">
+                    <i class="fas fa-briefcase card-icon"></i>
+                    <h3>Projets</h3>
+                    <p>Accéder à la section projets</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- Page TDs -->
+        <div id="tds" class="page">
+            <h1 class="page-title">Mes TDs</h1>
+            
+            <div class="td-item">
+                <div class="td-header">
+                    <h3>TD1 - Base de données</h3>
+                    <span class="td-date">
+                        <i class="fas fa-calendar"></i>
+                        15/09/2024
+                    </span>
+                </div>
+                <p>Introduction aux bases de données relationnelles</p>
+                <button class="btn-download">
+                    <i class="fas fa-download"></i>
+                    Télécharger le TD
+                </button>
+            </div>
+
+            <div class="td-item">
+                <div class="td-header">
+                    <h3>TD2 - SQL Avancé</h3>
+                    <span class="td-date">
+                        <i class="fas fa-calendar"></i>
+                        22/09/2024
+                    </span>
+                </div>
+                <p>Requêtes complexes et jointures</p>
+                <button class="btn-download">
+                    <i class="fas fa-download"></i>
+                    Télécharger le TD
+                </button>
+            </div>
+
+            <div class="td-item">
+                <div class="td-header">
+                    <h3>TD3 - UML</h3>
+                    <span class="td-date">
+                        <i class="fas fa-calendar"></i>
+                        29/09/2024
+                    </span>
+                </div>
+                <p>Diagrammes de classes et cas d'utilisation</p>
+                <button class="btn-download">
+                    <i class="fas fa-download"></i>
+                    Télécharger le TD
+                </button>
+            </div>
+
+            <div class="info-box">
+                <p>💡 Pour ajouter tes propres TDs, modifie le HTML !</p>
+            </div>
+        </div>
+
+        <!-- Page Cours -->
+        <div id="cours" class="page">
+            <h1 class="page-title">Mes Cours</h1>
+            
+            <div class="cours-grid">
+                <div class="cours-item">
+                    <div class="cours-content">
+                        <i class="fas fa-file-pdf cours-icon"></i>
+                        <div>
+                            <h3>Chapitre 1 - Architecture SI</h3>
+                            <span class="cours-type">PDF</span>
+                        </div>
+                    </div>
+                    <button class="btn-download-small">
+                        <i class="fas fa-download"></i>
+                    </button>
+                </div>
+
+                <div class="cours-item">
+                    <div class="cours-content">
+                        <i class="fas fa-file-pdf cours-icon"></i>
+                        <div>
+                            <h3>Chapitre 2 - Modélisation</h3>
+                            <span class="cours-type">PDF</span>
+                        </div>
+                    </div>
+                    <button class="btn-download-small">
+                        <i class="fas fa-download"></i>
+                    </button>
+                </div>
+
+                <div class="cours-item">
+                    <div class="cours-content">
+                        <i class="fas fa-file-pdf cours-icon"></i>
+                        <div>
+                            <h3>Chapitre 3 - Sécurité</h3>
+                            <span class="cours-type">PDF</span>
+                        </div>
+                    </div>
+                    <button class="btn-download-small">
+                        <i class="fas fa-download"></i>
+                    </button>
+                </div>
+            </div>
+
+            <div class="info-box">
+                <p>📚 Ajoute tes PDFs de cours en modifiant le HTML !</p>
+            </div>
+        </div>
+
+        <!-- Page Projets -->
+        <div id="projets" class="page">
+            <h1 class="page-title">Mes Projets</h1>
+            
+            <div class="projet-item">
+                <h3>Gestion de bibliothèque</h3>
+                <p>Système de gestion complet avec base de données</p>
+                <div class="projet-tech">
+                    <span class="tech-label">Technologies:</span>
+                    <span class="tech-badge">MySQL, PHP</span>
+                </div>
+            </div>
+
+            <div class="projet-item">
+                <h3>Application mobile SI</h3>
+                <p>App de suivi des cours et TDs</p>
+                <div class="projet-tech">
+                    <span class="tech-label">Technologies:</span>
+                    <span class="tech-badge">React Native</span>
+                </div>
+            </div>
+        </div>
+
+        <!-- Page Contact -->
+        <div id="contact" class="page">
+            <h1 class="page-title">Contact</h1>
+            
+            <div class="contact-form">
+                <div class="form-group">
+                    <label>Nom</label>
+                    <input type="text" placeholder="Votre nom">
+                </div>
+                <div class="form-group">
+                    <label>Email</label>
+                    <input type="email" placeholder="votre@email.com">
+                </div>
+                <div class="form-group">
+                    <label>Message</label>
+                    <textarea placeholder="Votre message..."></textarea>
+                </div>
+                <button class="btn-submit">Envoyer</button>
+            </div>
+        </div>
+    </main>
+
+    <!-- Footer -->
+    <footer>
+        <p>© 2024 Portfolio Système d'Information - Tous droits réservés</p>
+    </footer>
+
+    <script src="main.js"></script>
+</body>
+</html>
