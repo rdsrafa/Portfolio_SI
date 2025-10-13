@@ -27,15 +27,32 @@
                     <i class="fas fa-book-open"></i>
                     <span>Cours</span>
                 </button>
+                <button class="nav-btn" data-page="Documents_SI">
+                    <i class="fas fa-folder-open"></i>
+                    <span>Documents SI</span>
+                </button>
+                <button class="nav-btn" data-page="Certification">
+                    <i class="fas fa-award"></i>
+                    <span>Certification</span>
+                </button>
                 <button class="nav-btn" data-page="projets">
                     <i class="fas fa-briefcase"></i>
                     <span>Projets</span>
+                </button>
+                <button class="nav-btn" data-page="Soutenance">
+                    <i class="fas fa-chalkboard-teacher"></i>
+                    <span>Soutenance</span>
+                </button>
+                <button class="nav-btn" data-page="Autres_ressources">
+                    <i class="fas fa-link"></i>
+                    <span>Autres ressources</span>
                 </button>
                 <button class="nav-btn" data-page="contact">
                     <i class="fas fa-envelope"></i>
                     <span>Contact</span>
                 </button>
             </nav>
+
 
             <!-- Bouton menu mobile -->
             <button class="menu-toggle" id="menuToggle">
@@ -57,16 +74,32 @@
                 <i class="fas fa-book-open"></i>
                 <span>Cours</span>
             </button>
+            <button class="nav-mobile-btn" data-page="Documents_SI">
+                <i class="fas fa-folder-open"></i>
+                <span>Documents SI</span>
+            </button>
+            <button class="nav-mobile-btn" data-page="Certification">
+                <i class="fas fa-award"></i>
+                <span>Certification</span>
+            </button>
             <button class="nav-mobile-btn" data-page="projets">
                 <i class="fas fa-briefcase"></i>
                 <span>Projets</span>
+            </button>
+            <button class="nav-mobile-btn" data-page="Soutenance">
+                <i class="fas fa-chalkboard-teacher"></i>
+                <span>Soutenance</span>
+            </button>
+            <button class="nav-mobile-btn" data-page="Autres_ressources">
+                <i class="fas fa-link"></i>
+                <span>Autres ressources</span>
             </button>
             <button class="nav-mobile-btn" data-page="contact">
                 <i class="fas fa-envelope"></i>
                 <span>Contact</span>
             </button>
         </div>
-    </header>
+
 
     <!-- Contenu principal -->
     <main class="main-container">
@@ -78,21 +111,48 @@
             </div>
             
             <div class="cards-grid">
-                <div class="card" data-navigate="tds">
+                <div class="card" data-page="tds">
                     <i class="fas fa-file-alt card-icon"></i>
                     <h3>TDs</h3>
-                    <p>Accéder à la section tds</p>
+                    <p>Accéder à la section TDs</p>
                 </div>
-                <div class="card" data-navigate="cours">
+
+                <div class="card" data-page="cours">
                     <i class="fas fa-book-open card-icon"></i>
                     <h3>Cours</h3>
-                    <p>Accéder à la section cours</p>
+                    <p>Accéder à la section Cours</p>
                 </div>
-                <div class="card" data-navigate="projets">
+
+                <div class="card" data-page="Documents_SI">
+                    <i class="fas fa-folder-open card-icon"></i>
+                    <h3>Documents SI</h3>
+                    <p>Accéder à la section Documents SI</p>
+                </div>
+
+                <div class="card" data-page="Certification">
+                    <i class="fas fa-award card-icon"></i>
+                    <h3>Certification</h3>
+                    <p>Accéder à la section Certification</p>
+                </div>
+
+                <div class="card" data-page="projets">
                     <i class="fas fa-briefcase card-icon"></i>
                     <h3>Projets</h3>
-                    <p>Accéder à la section projets</p>
+                    <p>Accéder à la section Projets</p>
                 </div>
+
+                <div class="card" data-page="Soutenance">
+                    <i class="fas fa-chalkboard-teacher card-icon"></i>
+                    <h3>Soutenance</h3>
+                    <p>Accéder à la section Soutenance</p>
+                </div>
+
+                <div class="card" data-page="Autres_ressources">
+                    <i class="fas fa-link card-icon"></i>
+                    <h3>Autres ressources</h3>
+                    <p>Accéder à la section Autres ressources</p>
+                </div>
+
             </div>
         </div>
 
@@ -128,44 +188,106 @@
 
             <div class="td-item">
                 <div class="td-header">
-                    <h3>TD2 - SQL Avancé</h3>
+                    <h3>TD2 - Odoo</h3>
                     <span class="td-date">
                         <i class="fas fa-calendar"></i>
                         22/09/2024
                     </span>
                 </div>
-                <p>Requêtes complexes et jointures</p>
+                <p>Introduction a Odoo et Etude de cas </p>
                 <div class="files-container">
-                    <a href="documents/TD2_sujet.pdf" download class="file-link">
-                        <i class="fas fa-file-pdf"></i>
-                        <span>Sujet (PDF)</span>
+                    <a href="documents/TP Odoo.docx" download class="file-link">
+                        <i class="fas fa-file-word"></i>
+                        <span>TP Odoo</span>
                     </a>
-                    <a href="documents/TD2_corrige.pdf" download class="file-link">
-                        <i class="fas fa-file-pdf"></i>
-                        <span>Corrigé (PDF)</span>
+                    <a href="documents/TD2 si.docx" download class="file-link">
+                        <i class="fas fa-file-word"></i>
+                        <span>Etude de cas avec correction </span>
                     </a>
                 </div>
             </div>
 
             <div class="td-item">
                 <div class="td-header">
-                    <h3>TD3 - UML</h3>
+                    <h3>TD3 - Processus de gestion & modélisation</h3>
                     <span class="td-date">
                         <i class="fas fa-calendar"></i>
-                        29/09/2024
+                        29/09/2025
                     </span>
                 </div>
                 <p>Diagrammes de classes et cas d'utilisation</p>
                 <div class="files-container">
-                    <a href="documents/TD3_enonce.docx" download class="file-link">
+                    <a href="documents/dossier 3.docx" download class="file-link">
                         <i class="fas fa-file-word"></i>
-                        <span>Énoncé (Word)</span>
+                        <span>Td - Processus de gestion & modélisation</span>
+                    </a>
+                    <a href="documents/training shéma acteur flux (1).pdf" download class="file-link">
+                        <i class="fas fa-file-pdf"></i>
+                        <span>Introduction aux schémas acteurs-flux</span>
+                    </a>
+                    <a href="documents/diagramme_flux_1.pdf" download class="file-link">
+                        <i class="fas fa-file-pdf"></i>
+                        <span>Diagramme draw.io du training</span>
+                    </a>
+                </div>
+            </div>
+
+            <div class="td-item">
+                <div class="td-header">
+                    <h3>TD4 - Evénement-résultat</h3>
+                    <span class="td-date">
+                        <i class="fas fa-calendar"></i>
+                        06/10/2025
+                    </span>
+                </div>
+                <p>Réalisation de diagrammes de flux-acteurs grace a draw.io</p>
+                <div class="files-container">
+                    <a href="documents/TD4_schéma.png" download class="file-link">
+                        <i class="fas fa-file"></i>
+                        <span>schéma draw.io</span>
+                    </a>
+                    <a href="documents/A2.2_TD2_ProcessusOrganisationnel (1).pdf" download class="file-link">
+                        <i class="fas fa-file-pdf"></i>
+                        <span>Annexe du schéma</span>
+                    </a>
+                    <a href="documents/les livrables SI.docx" download class="file-link">
+                        <i class="fas fa-file-pdf"></i>
+                        <span>Livrables SI</span>
+                    </a>
+                </div>
+            </div>
+
+            <div class="td-item">
+                <div class="td-header">
+                    <h3>TD5 - MCD et diagramme de Gant </h3>
+                    <span class="td-date">
+                        <i class="fas fa-calendar"></i>
+                        13/10/2025
+                    </span>
+                </div>
+                <p>Utilisation de digramme de gant et introduction a MCD </p>
+                <div class="files-container">
+                    <a href="documents/tp gantt.docx" download class="file-link">
+                        <i class="fas fa-file-word"></i>
+                        <span>Enoncé digramme de gant </span>
+                    </a>
+                    <a href="documents/Online Gantt 20251013 (1).pdf" download class="file-link">
+                        <i class="fas fa-file-pdf"></i>
+                        <span>Correction diagramme de gant</span>
+                    </a>
+                    <a href="documents/TD MCD.pdf" download class="file-link">
+                        <i class="fas fa-file-pdf"></i>
+                        <span>Td MCO consigne </span>
+                    </a>
+                    <a href="documents/MCD.drawio.pdf" download class="file-link">
+                        <i class="fas fa-file-pdf"></i>
+                        <span>Correction exercice 1</span>
                     </a>
                 </div>
             </div>
 
             <div class="info-box">
-                <p>💡 Pour ajouter tes propres TDs, modifie le HTML !</p>
+                <p>💡 Voici mes différents tds, pour y accéder il suffit d'un clique  !</p>
             </div>
         </div>
 
@@ -176,46 +298,105 @@
             <div class="cours-grid">
                 <div class="cours-item">
                     <div class="cours-content">
-                        <i class="fas fa-file-pdf cours-icon"></i>
+                        <i class="fas fa-file-word cours-icon"></i>
                         <div>
-                            <h3>Chapitre 1 - Architecture SI</h3>
-                            <span class="cours-type">PDF</span>
+                            <h3>Prise de note</h3>
+                            <span class="cours-type">Word</span>
                         </div>
                     </div>
-                    <button class="btn-download-small">
+                    <a href="documents/Prise de note.odt" download class="btn-download-small">
                         <i class="fas fa-download"></i>
-                    </button>
-                </div>
-
-                <div class="cours-item">
-                    <div class="cours-content">
-                        <i class="fas fa-file-pdf cours-icon"></i>
-                        <div>
-                            <h3>Chapitre 2 - Modélisation</h3>
-                            <span class="cours-type">PDF</span>
-                        </div>
-                    </div>
-                    <button class="btn-download-small">
-                        <i class="fas fa-download"></i>
-                    </button>
-                </div>
-
-                <div class="cours-item">
-                    <div class="cours-content">
-                        <i class="fas fa-file-pdf cours-icon"></i>
-                        <div>
-                            <h3>Chapitre 3 - Sécurité</h3>
-                            <span class="cours-type">PDF</span>
-                        </div>
-                    </div>
-                    <button class="btn-download-small">
-                        <i class="fas fa-download"></i>
-                    </button>
+                    </a>
                 </div>
             </div>
 
             <div class="info-box">
-                <p>📚 Ajoute tes PDFs de cours en modifiant le HTML !</p>
+                <p>📚 Voici ma prise de note, j'ai donc ici toutes les informations concernant les prises de notes en cours !</p>
+            </div>
+        </div>
+        <!-- page Documents SI -->
+        <div id="Documents_SI" class="page">
+            <h1 class="page-title">Documents Système d’Information</h1>
+
+            <div class="documents-grid">
+                <div class="documents-item">
+                    <div class="documents-content">
+                        <i class="fas fa-file-pdf documents-icon"></i>
+                        <div>
+                            <h3>Cahier des charges</h3>
+                            <span class="documents-type">PDF</span>
+                        </div>
+                    </div>
+                    <a href="documents/cahier-des-charges-devis-support.pdf" download class="btn-download-small">
+                        <i class="fas fa-download"></i>
+                    </a>
+                </div>
+
+                <div class="documents-item">
+                    <div class="documents-content">
+                        <i class="fas fa-file-pdf documents-icon"></i>
+                        <div>
+                            <h3>Annexe - exemple cahier des charges</h3>
+                            <span class="documents-type">PDF</span>
+                        </div>
+                    </div>
+                    <a href="documents/1-TP1-annexe-ExempleCahierDesChargesIntranetINRA.pdf" download class="btn-download-small">
+                        <i class="fas fa-download"></i>
+                    </a>
+                </div>
+
+                <div class="documents-item">
+                    <div class="documents-content">
+                        <i class="fas fa-file-word documents-icon"></i>
+                        <div>
+                            <h3>Dossier gestion de projet </h3>
+                            <span class="documents-type">Word</span>
+                        </div>
+                    </div>
+                    <a href="documents/dossier gestion projet.odt" download class="btn-download-small">
+                        <i class="fas fa-download"></i>
+                    </a>
+                </div>
+            </div>
+
+            <div class="info-box">
+                <p>📂 Retrouvez ici les documents de travail relatifs à la gestion et à la modélisation du Système d’Information.</p>
+            </div>
+        </div>
+
+        <div id="Certification" class="page">
+            <h1 class="page-title">Certifications et Compétences</h1>
+
+            <div class="certification-grid">
+                <div class="certification-item">
+                    <div class="certification-content">
+                        <i class="fas fa-certificate certification-icon"></i>
+                        <div>
+                            <h3>Certification PIX</h3>
+                            <span class="certification-type">Compétences numériques</span>
+                        </div>
+                    </div>
+                    <a href="documents/certification-pix-20230317.pdf" download class="btn-download-small">
+                        <i class="fas fa-download"></i>
+                    </a>
+                </div>
+
+                <div class="certification-item">
+                    <div class="certification-content">
+                        <i class="fas fa-certificate certification-icon"></i>
+                        <div>
+                            <h3>Certification CNIL RGPD</h3>
+                            <span class="certification-type">Protection des données</span>
+                        </div>
+                    </div>
+                    <a href="documents/certif_RGPD.pdf" download class="btn-download-small">
+                        <i class="fas fa-download"></i>
+                    </a>
+                </div>
+            </div>
+
+            <div class="info-box">
+                <p>🏆 Ces certifications attestent de mes compétences en numérique, sécurité et protection des données.</p>
             </div>
         </div>
 
@@ -241,32 +422,143 @@
                 </div>
             </div>
         </div>
+        
+        <div id="Soutenance" class="page">
+            <h1 class="page-title">Soutenance de Projet</h1>
+
+            <div class="soutenance-grid">
+                <div class="soutenance-item">
+                    <div class="soutenance-content">
+                        <i class="fas fa-file-powerpoint soutenance-icon"></i>
+                        <div>
+                            <h3>Présentation finale du projet SI</h3>
+                            <span class="soutenance-type">PowerPoint</span>
+                        </div>
+                    </div>
+                    <a href="documents/soutenance_projet.pptx" download class="btn-download-small">
+                        <i class="fas fa-download"></i>
+                    </a>
+                </div>
+
+                <div class="soutenance-item">
+                    <div class="soutenance-content">
+                        <i class="fas fa-video soutenance-icon"></i>
+                        <div>
+                            <h3>Vidéo de soutenance</h3>
+                            <span class="soutenance-type">MP4</span>
+                        </div>
+                    </div>
+                    <a href="documents/video_soutenance.mp4" download class="btn-download-small">
+                        <i class="fas fa-download"></i>
+                    </a>
+                </div>
+            </div>
+
+            <div class="info-box">
+                <p>🎥 Retrouvez ici ma présentation de fin de projet et les supports utilisés lors de la soutenance.</p>
+            </div>
+        </div>
+
+        <div id="Autres_ressources" class="page">
+            <h1 class="page-title">Autres Ressources</h1>
+
+            <div class="ressources-grid">
+                <div class="ressources-item">
+                    <div class="ressources-content">
+                        <i class="fas fa-link ressources-icon"></i>
+                        <div>
+                            <h3>Documentation Odoo </h3>
+                            <span class="ressources-type">Liens utiles</span>
+                        </div>
+                    </div>
+                    <a href="https://www.odoo.com/documentation/18.0/fr/applications/essentials/activities.html" target="_blank" class="btn-download-small">
+                        <i class="fas fa-external-link-alt"></i>
+                    </a>
+                </div>
+
+                <div class="ressources-item">
+                    <div class="ressources-content">
+                        <i class="fas fa-link ressources-icon"></i>
+                        <div>
+                            <h3>Modéliser des schémas acteurs-flux </h3>
+                            <span class="ressources-type">draw.io</span>
+                        </div>
+                    </div>
+                    <a href="https://www.drawio.com/" target="_blank" class="btn-download-small">
+                        <i class="fas fa-external-link-alt"></i>
+                    </a>
+                </div>
+
+                <div class="ressources-item">
+                    <div class="ressources-content">
+                        <i class="fas fa-book ressources-icon"></i>
+                        <div>
+                            <h3>Guide de modélisation UML</h3>
+                            <span class="ressources-type">PDF</span>
+                        </div>
+                    </div>
+                    <a href="documents/guide_UML.pdf" download class="btn-download-small">
+                        <i class="fas fa-download"></i>
+                    </a>
+                </div>
+
+                <div class="ressources-item">
+                    <div class="ressources-content">
+                        <i class="fas fa-code ressources-icon"></i>
+                        <div>
+                            <h3>Exemples de scripts SQL</h3>
+                            <span class="ressources-type">SQL</span>
+                        </div>
+                    </div>
+                    <a href="documents/exemples_SQL.sql" download class="btn-download-small">
+                        <i class="fas fa-download"></i>
+                    </a>
+                </div>
+            </div>
+
+            <div class="info-box">
+                <p>🔗 Cette section regroupe des documents et liens supplémentaires pour approfondir les notions vues en SI.</p>
+            </div>
+        </div>
 
         <!-- Page Contact -->
         <div id="contact" class="page">
             <h1 class="page-title">Contact</h1>
             
-            <div class="contact-form">
+            <form id="contactForm" class="contact-form">
                 <div class="form-group">
-                    <label>Nom</label>
-                    <input type="text" placeholder="Votre nom">
+                    <label for="name">Nom</label>
+                    <input type="text" id="name" placeholder="Votre nom">
+                    <small id="nameError" class="error-message"></small>
                 </div>
+
                 <div class="form-group">
-                    <label>Email</label>
-                    <input type="email" placeholder="votre@email.com">
+                    <label for="email">Email</label>
+                    <input type="email" id="email" placeholder="votre@email.com">
+                    <small id="emailError" class="error-message"></small>
                 </div>
+
                 <div class="form-group">
-                    <label>Message</label>
-                    <textarea placeholder="Votre message..."></textarea>
+                    <label for="message">Message</label>
+                    <textarea id="message" placeholder="Votre message..."></textarea>
+                    <small id="messageError" class="error-message"></small>
                 </div>
-                <button class="btn-submit">Envoyer</button>
-            </div>
+
+                <button type="submit" class="btn-submit">Envoyer</button>
+                <p id="successMessage" class="success-message"></p>
+            </form>
         </div>
+
+
     </main>
+
+    <button id="scrollToTop" class="scroll-top-btn" aria-label="Remonter en haut">
+        <i class="fas fa-arrow-up"></i>
+    </button>
 
     <!-- Footer -->
     <footer>
-        <p>© 2024 Portfolio Système d'Information - Tous droits réservés</p>
+        <p>© 2025 Portfolio Rafael Système d'Information - Tous droits réservés</p>
     </footer>
 
     <script src="main.js"></script>
