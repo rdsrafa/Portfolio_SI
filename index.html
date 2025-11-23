@@ -1,0 +1,869 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio Système d'Information</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Header avec menu -->
+    <header id="header">
+        <div class="header-container">
+            <h2 class="logo">SI Portfolio</h2>
+            
+            <!-- Menu desktop -->
+            <nav class="nav-desktop">
+                <button class="nav-btn active" data-page="accueil">
+                    <i class="fas fa-home"></i>
+                    <span>Accueil</span>
+                </button>
+                <button class="nav-btn" data-page="tds">
+                    <i class="fas fa-file-alt"></i>
+                    <span>TDs</span>
+                </button>
+                <button class="nav-btn" data-page="cours">
+                    <i class="fas fa-book-open"></i>
+                    <span>Cours</span>
+                </button>
+                <button class="nav-btn" data-page="Documents_SI">
+                    <i class="fas fa-folder-open"></i>
+                    <span>Documents SI</span>
+                </button>
+                <button class="nav-btn" data-page="Certification">
+                    <i class="fas fa-award"></i>
+                    <span>Certification</span>
+                </button>
+                <button class="nav-btn" data-page="projets">
+                    <i class="fas fa-briefcase"></i>
+                    <span>Projet Final</span>
+                </button>
+                <button class="nav-btn" data-page="Soutenance">
+                    <i class="fas fa-chalkboard-teacher"></i>
+                    <span>Soutenance</span>
+                </button>
+                <button class="nav-btn" data-page="Autres_ressources">
+                    <i class="fas fa-link"></i>
+                    <span>Autres ressources</span>
+                </button>
+                <button class="nav-btn" data-page="contact">
+                    <i class="fas fa-envelope"></i>
+                    <span>Contact</span>
+                </button>
+            </nav>
+
+
+            <!-- Bouton menu mobile -->
+            <button class="menu-toggle" id="menuToggle">
+                <i class="fas fa-bars"></i>
+            </button>
+        </div>
+
+        <!-- Menu mobile -->
+        <div class="nav-mobile" id="navMobile">
+            <button class="nav-mobile-btn active" data-page="accueil">
+                <i class="fas fa-home"></i>
+                <span>Accueil</span>
+            </button>
+            <button class="nav-mobile-btn" data-page="tds">
+                <i class="fas fa-file-alt"></i>
+                <span>TDs</span>
+            </button>
+            <button class="nav-mobile-btn" data-page="cours">
+                <i class="fas fa-book-open"></i>
+                <span>Cours</span>
+            </button>
+            <button class="nav-mobile-btn" data-page="Documents_SI">
+                <i class="fas fa-folder-open"></i>
+                <span>Documents SI</span>
+            </button>
+            <button class="nav-mobile-btn" data-page="Certification">
+                <i class="fas fa-award"></i>
+                <span>Certification</span>
+            </button>
+            <button class="nav-mobile-btn" data-page="projets">
+                <i class="fas fa-briefcase"></i>
+                <span>Projet Final</span>
+            </button>
+            <button class="nav-mobile-btn" data-page="Soutenance">
+                <i class="fas fa-chalkboard-teacher"></i>
+                <span>Soutenance</span>
+            </button>
+            <button class="nav-mobile-btn" data-page="Autres_ressources">
+                <i class="fas fa-link"></i>
+                <span>Autres ressources</span>
+            </button>
+            <button class="nav-mobile-btn" data-page="contact">
+                <i class="fas fa-envelope"></i>
+                <span>Contact</span>
+            </button>
+        </div>
+
+
+    <!-- Contenu principal -->
+    <main class="main-container">
+        <!-- Page Accueil -->
+        <div id="accueil" class="page active">
+            <div class="hero">
+                <h1>Portfolio Système d'Information</h1>
+                <p>Bienvenue sur mon portfolio de SI ! Retrouvez tous mes TDs, cours et projets.</p>
+                <p>Rafael RODRIGUES 43002619</p>
+            </div>
+            
+            <div class="cards-grid">
+                <div class="card" data-page="tds">
+                    <i class="fas fa-file-alt card-icon"></i>
+                    <h3>TDs</h3>
+                    <p>Accéder à la section TDs</p>
+                </div>
+
+                <div class="card" data-page="cours">
+                    <i class="fas fa-book-open card-icon"></i>
+                    <h3>Cours</h3>
+                    <p>Accéder à la section Cours</p>
+                </div>
+
+                <div class="card" data-page="Documents_SI">
+                    <i class="fas fa-folder-open card-icon"></i>
+                    <h3>Documents SI</h3>
+                    <p>Accéder à la section Documents SI</p>
+                </div>
+
+                <div class="card" data-page="Certification">
+                    <i class="fas fa-award card-icon"></i>
+                    <h3>Certification</h3>
+                    <p>Accéder à la section Certification</p>
+                </div>
+
+                <div class="card" data-page="projets">
+                    <i class="fas fa-briefcase card-icon"></i>
+                    <h3>Projet Final </h3>
+                    <p>Accéder à la section Projet Final</p>
+                </div>
+
+                <div class="card" data-page="Soutenance">
+                    <i class="fas fa-chalkboard-teacher card-icon"></i>
+                    <h3>Soutenance</h3>
+                    <p>Accéder à la section Soutenance</p>
+                </div>
+
+                <div class="card" data-page="Autres_ressources">
+                    <i class="fas fa-link card-icon"></i>
+                    <h3>Autres ressources</h3>
+                    <p>Accéder à la section Autres ressources</p>
+                </div>
+
+            </div>
+        </div>
+
+        <!-- Page TDs -->
+        <div id="tds" class="page">
+            <h1 class="page-title">Mes TDs</h1>
+            
+            <div class="td-item">
+                <div class="td-header">
+                    <h3>TD1 - Introduction aux Systèmes d'information</h3>
+                    <span class="td-date">
+                        <i class="fas fa-calendar"></i>
+                        15/09/2024
+                    </span>
+                </div>
+                <p>Comprendre les fondements des SI </p>
+                <div class="files-container">
+                    <a href="documents/TD 1 SI (1).docx" download class="file-link">
+                        <i class="fas fa-file-word"></i>
+                        <span>TD et corrigé du TD </span>
+                    </a>
+                    <a href="documents/td_PGI_exercice.docx" download class="file-link">
+                        <i class="fas fa-file-word"></i>
+                        <span>TD PGI_exercice </span>
+                    </a>
+                    <a href="documents/PGI_exercice.xls" download class="file-link">
+                        <i class="fas fa-file-excel"></i>
+                        <span>PGI_exercice</span>
+                    </a>
+                    
+                </div>
+            </div>
+
+            <div class="td-item">
+                <div class="td-header">
+                    <h3>TD2 - Odoo</h3>
+                    <span class="td-date">
+                        <i class="fas fa-calendar"></i>
+                        22/09/2024
+                    </span>
+                </div>
+                <p>Introduction a Odoo et Etude de cas </p>
+                <div class="files-container">
+                    <a href="documents/TP Odoo.docx" download class="file-link">
+                        <i class="fas fa-file-word"></i>
+                        <span>TP Odoo</span>
+                    </a>
+                    <a href="documents/TD2 si.docx" download class="file-link">
+                        <i class="fas fa-file-word"></i>
+                        <span>Etude de cas avec correction </span>
+                    </a>
+                </div>
+            </div>
+
+            <div class="td-item">
+                <div class="td-header">
+                    <h3>TD3 - Processus de gestion & modélisation</h3>
+                    <span class="td-date">
+                        <i class="fas fa-calendar"></i>
+                        29/09/2025
+                    </span>
+                </div>
+                <p>Introduction au processus et aux schémas acteurs-flux</p>
+                <div class="files-container">
+                    <a href="documents/dossier 3.docx" download class="file-link">
+                        <i class="fas fa-file-word"></i>
+                        <span>Td - Processus de gestion & modélisation</span>
+                    </a>
+                    <a href="documents/training shéma acteur flux (1).pdf" download class="file-link">
+                        <i class="fas fa-file-pdf"></i>
+                        <span>Introduction aux schémas acteurs-flux</span>
+                    </a>
+                    <a href="documents/diagramme_flux_1.pdf" download class="file-link">
+                        <i class="fas fa-file-pdf"></i>
+                        <span>Diagramme draw.io du training</span>
+                    </a>
+                </div>
+            </div>
+
+            <div class="td-item">
+                <div class="td-header">
+                    <h3>TD4 - Evénement-résultat</h3>
+                    <span class="td-date">
+                        <i class="fas fa-calendar"></i>
+                        06/10/2025
+                    </span>
+                </div>
+                <p>Réalisation de diagrammes Evenement-Résultat grace a draw.io</p>
+                <div class="files-container">
+                    <a href="documents/TD4_schéma.png" download class="file-link">
+                        <i class="fas fa-file"></i>
+                        <span>schéma draw.io</span>
+                    </a>
+                    <a href="documents/A2.2_TD2_ProcessusOrganisationnel (1).pdf" download class="file-link">
+                        <i class="fas fa-file-pdf"></i>
+                        <span>Annexe du schéma</span>
+                    </a>
+                    <a href="documents/les livrables SI.docx" download class="file-link">
+                        <i class="fas fa-file-pdf"></i>
+                        <span>Livrables SI</span>
+                    </a>
+                </div>
+            </div>
+
+            <div class="td-item">
+                <div class="td-header">
+                    <h3>TD5 - MCD et diagramme de Gant </h3>
+                    <span class="td-date">
+                        <i class="fas fa-calendar"></i>
+                        13/10/2025
+                    </span>
+                </div>
+                <p>Utilisation de digramme de gant et introduction a MCD </p>
+                <div class="files-container">
+                    <a href="documents/tp gantt.docx" download class="file-link">
+                        <i class="fas fa-file-word"></i>
+                        <span>Enoncé digramme de gant </span>
+                    </a>
+                    <a href="documents/Online Gantt 20251013 (1).pdf" download class="file-link">
+                        <i class="fas fa-file-pdf"></i>
+                        <span>Correction diagramme de gant</span>
+                    </a>
+                    <a href="documents/TD MCD.pdf" download class="file-link">
+                        <i class="fas fa-file-pdf"></i>
+                        <span>Td MCD consigne </span>
+                    </a>
+                    <a href="documents/MCD.drawio.pdf" download class="file-link">
+                        <i class="fas fa-file-pdf"></i>
+                        <span>Correction exercice 1</span>
+                    </a>
+                </div>
+            </div>
+
+            <div class="td-item">
+                <div class="td-header">
+                    <h3>TD6 - Diagramme de cas d'utilisation et digramme de classe  </h3>
+                    <span class="td-date">
+                        <i class="fas fa-calendar"></i>
+                        03/11/2025
+                    </span>
+                </div>
+                <p>Introduction aux diagrammes USE CASE et de classe </p>
+                <div class="files-container">
+                    <a href="documents/USE CASE.docx" download class="file-link">
+                        <i class="fas fa-file-word"></i>
+                        <span>Exercices et correction diagramme USE CASE </span>
+                    </a>
+                    <a href="documents/cours use case.pdf" download class="file-link">
+                        <i class="fas fa-file-pdf"></i>
+                        <span>Cours USE CASE</span>
+                    </a>
+                    <a href="documents/Diagramme de classe.docx" download class="file-link">
+                        <i class="fas fa-file-word"></i>
+                        <span>Exercice et correction diagramme de classe</span>
+                    </a>
+                </div>
+            </div>
+
+            <div class="info-box">
+                <p>💡 Voici mes différents tds, pour y accéder il suffit d'un clique  !</p>
+            </div>
+        </div>
+
+        <!-- Page Cours -->
+        <div id="cours" class="page">
+            <h1 class="page-title">Mes Cours</h1>
+            
+            <div class="cours-grid">
+                <div class="cours-item">
+                    <div class="cours-content">
+                        <i class="fas fa-file-word cours-icon"></i>
+                        <div>
+                            <h3>Prise de note</h3>
+                            <span class="cours-type">Word</span>
+                        </div>
+                    </div>
+                    <a href="documents/Prise de note.odt" download class="btn-download-small">
+                        <i class="fas fa-download"></i>
+                    </a>
+                </div>
+
+                <div class="cours-item">
+                    <div class="cours-content">
+                        <i class="fas fa-file-pdf cours-icon"></i>
+                        <div>
+                            <h3>Cours - Gestion de projets de Systèmes d'Information</h3>
+                            <span class="cours-type">PDF</span>
+                        </div>
+                    </div>
+                    <a href="documents/cours gestion de projet version étudiant.pdf" download class="btn-download-small">
+                        <i class="fas fa-download"></i>
+                    </a>
+                </div>
+
+                <div class="cours-item">
+                    <div class="cours-content">
+                        <i class="fas fa-file-pdf cours-icon"></i>
+                        <div>
+                            <h3>Cours Système d'information PDF</h3>
+                            <span class="cours-type">PDF</span>
+                        </div>
+                    </div>
+                    <a href="documents/cours information.pdf" download class="btn-download-small">
+                        <i class="fas fa-download"></i>
+                    </a>
+                </div>
+            </div>
+
+            <div class="info-box">
+                <p>📚 Voici ma prise de note, j'ai donc ici toutes les informations concernant les prises de notes en cours !</p>
+            </div>
+        </div>
+        <!-- page Documents SI -->
+        <div id="Documents_SI" class="page">
+            <h1 class="page-title">Documents Système d’Information</h1>
+
+            <div class="documents-grid">
+                <div class="documents-item">
+                    <div class="documents-content">
+                        <i class="fas fa-file-pdf documents-icon"></i>
+                        <div>
+                            <h3>Cahier des charges</h3>
+                            <span class="documents-type">PDF</span>
+                        </div>
+                    </div>
+                    <a href="documents/cahier-des-charges-devis-support.pdf" download class="btn-download-small">
+                        <i class="fas fa-download"></i>
+                    </a>
+                </div>
+
+                <div class="documents-item">
+                    <div class="documents-content">
+                        <i class="fas fa-file-word documents-icon"></i>
+                        <div>
+                            <h3>Exemple SFG</h3>
+                            <span class="documents-type">Word</span>
+                        </div>
+                    </div>
+                    <a href="documents/SFG_TalentSeek.docx" download class="btn-download-small">
+                        <i class="fas fa-download"></i>
+                    </a>
+                </div>
+
+                <div class="documents-item">
+                    <div class="documents-content">
+                        <i class="fas fa-file-pdf documents-icon"></i>
+                        <div>
+                            <h3>Annexe - exemple cahier des charges</h3>
+                            <span class="documents-type">PDF</span>
+                        </div>
+                    </div>
+                    <a href="documents/1-TP1-annexe-ExempleCahierDesChargesIntranetINRA.pdf" download class="btn-download-small">
+                        <i class="fas fa-download"></i>
+                    </a>
+                </div>
+
+                <div class="documents-item">
+                    <div class="documents-content">
+                        <i class="fas fa-file-word documents-icon"></i>
+                        <div>
+                            <h3>Dossier gestion de projet </h3>
+                            <span class="documents-type">Word</span>
+                        </div>
+                    </div>
+                    <a href="documents/dossier gestion projet.odt" download class="btn-download-small">
+                        <i class="fas fa-download"></i>
+                    </a>
+                </div>
+            </div>
+
+            <div class="info-box">
+                <p>📂 Retrouvez ici les documents de travail relatifs à la gestion et à la modélisation du Système d’Information.</p>
+            </div>
+        </div>
+
+        <div id="Certification" class="page">
+            <h1 class="page-title">Certifications et Compétences</h1>
+
+            <div class="certification-grid">
+                <div class="certification-item">
+                    <div class="certification-content">
+                        <i class="fas fa-certificate certification-icon"></i>
+                        <div>
+                            <h3>Certification PIX</h3>
+                            <span class="certification-type">Compétences numériques</span>
+                        </div>
+                    </div>
+                    <a href="documents/certification-pix-20230317.pdf" download class="btn-download-small">
+                        <i class="fas fa-download"></i>
+                    </a>
+                </div>
+            </div>
+
+            <div class="info-box">
+                <p>🏆 Ces certifications attestent de mes compétences en numérique, sécurité et protection des données.</p>
+            </div>
+        </div>
+
+        <!-- Page Projets -->
+        <div id="projets" class="page">
+            <h1 class="page-title">Projet Final</h1>
+            
+            <div class="projet-item">
+                <h3>PGI pour une PME de revente de sneakers</h3>
+                <p>Système de gestion complet avec base de données</p>
+                <div class="projet-tech">
+                    <span class="tech-label">Technologies:</span>
+                    <span class="tech-badge">MySQL, PHP</span>
+                </div>
+            </div>
+
+            <div class="projet-item">
+                <h3>Application mobile SI</h3>
+                <p>App de suivi des cours et TDs</p>
+                <div class="projet-tech">
+                    <span class="tech-label">Technologies:</span>
+                    <span class="tech-badge">HTML, JS, CSS</span>
+                </div>
+            </div>
+
+            <div class="projet-item">
+                <h3>Création d'un site web de gestion de tutorat</h3>
+                <p>plateforme optimisé de gestion du tutorat dédier a l'UFR SEGMI</p>
+                <div class="projet-tech">
+                    <span class="tech-label">Technologies:</span>
+                    <span class="tech-badge">Framework django, python3, html, css, js</span>
+                </div>
+            </div>
+        </div>
+        
+        <div id="Soutenance" class="page">
+            <h1 class="page-title">Soutenance de Projet</h1>
+
+            <!-- Lien du site -->
+            <div class="site-link-container">
+                <div class="site-link-header">
+                    <i class="fas fa-globe"></i>
+                    <h3>Lien du Site Web</h3>
+                </div>
+                <div class="site-link-content">
+                    <input type="url" id="siteUrl" value="https://adoosneakers.infinityfreeapp.com/Projet_Final/" readonly>
+                    <button class="btn-copy" onclick="copySiteUrl()">
+                        <i class="fas fa-copy"></i>
+                        Copier
+                    </button>
+                </div>
+                <small class="site-note">Cliquez sur le bouton pour copier le lien du site</small>
+            </div>
+            <!-- À ajouter après le site-link-container et avant le sommaire des livrables -->
+            <h2 class="section-subtitle">
+                <i class="fas fa-video"></i>
+                Vidéos de Démonstration
+            </h2>
+
+            <div class="videos-demo-grid">
+                <!-- Vidéo Interface Admin -->
+                <div class="video-demo-item">
+                    <div class="video-demo-header">
+                        <i class="fas fa-user-shield"></i>
+                        <h3>Interface Administrateur</h3>
+                    </div>
+                    <div class="video-wrapper">
+                        <video controls preload="metadata">
+                            <source src="documents/interface_admin.mp4" type="video/mp4">
+                            <source src="documents/interface_admin.mp4" type="video/quicktime">
+                            Votre navigateur ne supporte pas la lecture de vidéos.
+                        </video>
+                    </div>
+                    <p class="video-description">Démonstration des fonctionnalités administrateur : gestion des ventes, stocks, RH et fournisseurs</p>
+                </div>
+
+                <!-- Vidéo Interface Fournisseur -->
+                <div class="video-demo-item">
+                    <div class="video-demo-header">
+                        <i class="fas fa-truck"></i>
+                        <h3>Interface Fournisseur</h3>
+                    </div>
+                    <div class="video-wrapper">
+                        <video controls preload="metadata">
+                            <source src="documents/interface_fournisseur.mp4" type="video/mp4">
+                            <source src="documents/interface_fournisseur.mp4" type="video/quicktime">
+                            Votre navigateur ne supporte pas la lecture de vidéos.
+                        </video>
+                    </div>
+                    <p class="video-description">Gestion du catalogue produits et suivi des commandes fournisseur</p>
+                </div>
+
+                <!-- Vidéo Interface Client -->
+                <div class="video-demo-item">
+                    <div class="video-demo-header">
+                        <i class="fas fa-shopping-cart"></i>
+                        <h3>Interface Client</h3>
+                    </div>
+                    <div class="video-wrapper">
+                        <video controls preload="metadata">
+                            <source src="documents/interface_client.mp4" type="video/mp4">
+                            <source src="documents/interface_client.mp4" type="video/quicktime">
+                            Votre navigateur ne supporte pas la lecture de vidéos.
+                        </video>
+                    </div>
+                    <p class="video-description">Parcours client : recherche de sneakers, ajout au panier et programme de fidélité</p>
+                </div>
+
+                <!-- Vidéo Interface Employé -->
+                <div class="video-demo-item">
+                    <div class="video-demo-header">
+                        <i class="fas fa-user-tie"></i>
+                        <h3>Interface Employé</h3>
+                    </div>
+                    <div class="video-wrapper">
+                        <video controls preload="metadata">
+                            <source src="documents/interface_employee.mp4" type="video/mp4">
+                            <source src="documents/interface_employee.mp4" type="video/quicktime">
+                            Votre navigateur ne supporte pas la lecture de vidéos.
+                        </video>
+                    </div>
+                    <p class="video-description">Réalisation de ventes en boutique, consultation du stock et gestion des congés</p>
+                </div>
+            </div>
+
+            <div class="info-box">
+                <p>🎥 Ces vidéos présentent en détail chacune des quatre interfaces du PGI Adoo Sneakers.</p>
+            </div>
+            <!-- Sommaire des livrables -->
+            <h2 class="section-subtitle">
+                <i class="fas fa-file-invoice"></i>
+                Sommaire des Livrables
+            </h2>
+
+            <div class="livrables-grid">
+                <!-- Livrable 1 -->
+                <div class="livrable-item">
+                    <div class="livrable-header">
+                        <i class="fas fa-file-alt livrable-icon"></i>
+                        <div>
+                            <h3>Cahier des charges</h3>
+                            <span class="livrable-type">PDF</span>
+                        </div>
+                    </div>
+                    <p class="livrable-description">Document définissant les besoins et spécifications du projet</p>
+                    <a href="documents/cahier_des_charges.pdf" download class="btn-download-livrable">
+                        <i class="fas fa-download"></i>
+                        Télécharger
+                    </a>
+                </div>
+                
+                <div class="livrable-item">
+                    <div class="livrable-header">
+                        <i class="fas fa-book livrable-icon"></i>
+                        <div>
+                            <h3>Rapport de faisabilité</h3>
+                            <span class="livrable-type">PDF</span>
+                        </div>
+                    </div>
+                    <p class="livrable-description">Ce rapport analyse si le projet peut être réalisé en tenant compte des moyens, des compétences, du coût et du contexte de l’entreprise.</p>
+                    <a href="documents/etude_de_faisabilite.pdf" download class="btn-download-livrable">
+                        <i class="fas fa-download"></i>
+                        Télécharger
+                    </a>
+                </div>
+
+                <!-- Livrable 2 -->
+                <div class="livrable-item">
+                    <div class="livrable-header">
+                        <i class="fas fa-project-diagram livrable-icon"></i>
+                        <div>
+                            <h3>Diagramme de cas d'utilisation</h3>
+                            <span class="livrable-type">JPEG</span>
+                        </div>
+                    </div>
+                    <p class="livrable-description">Ces schémas facilitent la compréhension du fonctionnement du système avant son développement(USE CASE)</p>
+                    <a href="documents/Cas_d_utilisation.jpeg" download class="btn-download-livrable">
+                        <i class="fas fa-download"></i>
+                        Télécharger
+                    </a>
+                </div>
+
+                <!--Livrable 3-->
+                <div class="livrable-item">
+                    <div class="livrable-header">
+                        <i class="fas fa-project-diagram livrable-icon"></i>
+                        <div>
+                            <h3>Diagramme de classe</h3>
+                            <span class="livrable-type">JPEG</span>
+                        </div>
+                    </div>
+                    <p class="livrable-description">Ces schémas facilitent la compréhension du fonctionnement du système avant son développement(Diagramme de classe)</p>
+                    <a href="documents/Diagramme_de_class.jpeg" download class="btn-download-livrable">
+                        <i class="fas fa-download"></i>
+                        Télécharger
+                    </a>
+                </div>
+
+                <!-- Livrable 4 -->
+                <div class="livrable-item">
+                    <div class="livrable-header">
+                        <i class="fas fa-database livrable-icon"></i>
+                        <div>
+                            <h3>Modèle de données (MCD)</h3>
+                            <span class="livrable-type">JPEG</span>
+                        </div>
+                    </div>
+                    <p class="livrable-description">Schéma conceptuel de la base de données</p>
+                    <a href="documents/MCD.jpeg" download class="btn-download-livrable">
+                        <i class="fas fa-download"></i>
+                        Télécharger
+                    </a>
+                </div>
+
+                <!-- Livrable 4 -->
+                <div class="livrable-item">
+                    <div class="livrable-header">
+                        <i class="fas fa-chart-gantt livrable-icon"></i>
+                        <div>
+                            <h3>Planning (Gantt)</h3>
+                            <span class="livrable-type">PDF</span>
+                        </div>
+                    </div>
+                    <p class="livrable-description">Diagramme de Gantt du projet</p>
+                    <a href="documents/Online Gantt 20251103 (2).pdf" download class="btn-download-livrable">
+                        <i class="fas fa-download"></i>
+                        Télécharger
+                    </a>
+                </div>
+
+                <!-- Livrable 5 -->
+                <div class="livrable-item">
+                    <div class="livrable-header">
+                        <i class="fas fa-book livrable-icon"></i>
+                        <div>
+                            <h3>SFD</h3>
+                            <span class="livrable-type">PDF</span>
+                        </div>
+                    </div>
+                    <p class="livrable-description">Détailler précisément chaque fonctionnalité avec règles de gestion et scénarios.</p>
+                    <a href="documents/SFD.pdf" download class="btn-download-livrable">
+                        <i class="fas fa-download"></i>
+                        Télécharger
+                    </a>
+                </div>
+
+                <!-- Livrable 6 -->
+                <div class="livrable-item">
+                    <div class="livrable-header">
+                        <i class="fas fa-book livrable-icon"></i>
+                        <div>
+                            <h3>SFG</h3>
+                            <span class="livrable-type">PDF</span>
+                        </div>
+                    </div>
+                    <p class="livrable-description">Décrire globalement les fonctionnalités attendues du système.</p>
+                    <a href="documents/SFG.pdf" download class="btn-download-livrable">
+                        <i class="fas fa-download"></i>
+                        Télécharger
+                    </a>
+                </div>
+
+                <div class="livrable-item">
+                    <div class="livrable-header">
+                        <i class="fas fa-book livrable-icon"></i>
+                        <div>
+                            <h3>Dossier technique </h3>
+                            <span class="livrable-type">PDF</span>
+                        </div>
+                    </div>
+                    <p class="livrable-description">Définir l’architecture, les technologies et les choix techniques du système.</p>
+                    <a href="documents/Dossier_technique.pdf" download class="btn-download-livrable">
+                        <i class="fas fa-download"></i>
+                        Télécharger
+                    </a>
+                </div>
+                
+                <div class="livrable-item">
+                    <div class="livrable-header">
+                        <i class="fas fa-book livrable-icon"></i>
+                        <div>
+                            <h3>Maquettes</h3>
+                            <span class="livrable-type">PDF</span>
+                        </div>
+                    </div>
+                    <p class="livrable-description">Présenter visuellement l’interface utilisateur avant le développement(FIGMA)</p>
+                    <a href="documents/maquettes.pdf" download class="btn-download-livrable">
+                        <i class="fas fa-download"></i>
+                        Télécharger
+                    </a>
+                </div>
+                
+                <!-- Livrable 7 -->
+                <div class="livrable-item">
+                    <div class="livrable-header">
+                        <i class="fas fa-book livrable-icon"></i>
+                        <div>
+                            <h3>Rapport de test</h3>
+                            <span class="livrable-type">PDF</span>
+                        </div>
+                    </div>
+                    <p class="livrable-description">Présenter les résultats des tests et les anomalies corrigées..</p>
+                    <a href="documents/rapport_de_test.pdf" download class="btn-download-livrable">
+                        <i class="fas fa-download"></i>
+                        Télécharger
+                    </a>
+
+                </div>    
+            <div class="info-box">
+                <p>📦 Retrouvez ici tous les livrables du projet ainsi que le lien vers le site développé.</p>
+            </div>
+        </div>
+    </header> 
+        <div id="Autres_ressources" class="page">
+            <h1 class="page-title">Autres Ressources</h1>
+
+            <div class="ressources-grid">
+                <div class="ressources-item">
+                    <div class="ressources-content">
+                        <i class="fas fa-book ressources-icon"></i>
+                        <div>
+                            <h3>Documentation Odoo </h3>
+                            <span class="ressources-type">Liens utiles</span>
+                        </div>
+                    </div>
+                    <a href="https://www.odoo.com/documentation/18.0/fr/applications/essentials/activities.html" target="_blank" class="btn-download-small">
+                        <i class="fas fa-external-link-alt"></i>
+                    </a>
+                </div>
+
+                <div class="ressources-item">
+                    <div class="ressources-content">
+                        <i class="fas fa-link ressources-icon"></i>
+                        <div>
+                            <h3>Modéliser des schémas acteurs-flux </h3>
+                            <span class="ressources-type">draw.io</span>
+                        </div>
+                    </div>
+                    <a href="https://www.drawio.com/" target="_blank" class="btn-download-small">
+                        <i class="fas fa-external-link-alt"></i>
+                    </a>
+                </div>
+
+                <div class="ressources-item">
+                    <div class="ressources-content">
+                        <i class="fas fa-link ressources-icon"></i>
+                        <div>
+                            <h3>Créer des maquettes </h3>
+                            <span class="ressources-type">FIGMA</span>
+                        </div>
+                    </div>
+                    <a href="https://www.figma.com/fr-fr/" target="_blank" class="btn-download-small">
+                        <i class="fas fa-external-link-alt"></i>
+                    </a>
+                </div>
+
+                <div class="ressources-item">
+                    <div class="ressources-content">
+                        <i class="fas fa-link ressources-icon"></i>
+                        <div>
+                            <h3>Créer des diagrammes de Gant </h3>
+                            <span class="ressources-type">onlinegantt</span>
+                        </div>
+                    </div>
+                    <a href="https://www.onlinegantt.com/#/gantt" target="_blank" class="btn-download-small">
+                        <i class="fas fa-external-link-alt"></i>
+                    </a>
+                </div>
+            </div> <!-- ⬅️ CETTE BALISE MANQUAIT ICI pour fermer ressources-grid -->
+            
+            <div class="info-box">
+                <p>🔗 Cette section regroupe des documents et liens supplémentaires pour approfondir les notions vues en SI.</p>
+            </div>
+        </div>
+
+        <!-- Page Contact -->
+        <div id="contact" class="page">
+            <h1 class="page-title">Contact</h1>
+            
+            <form id="contactForm" class="contact-form">
+                <div class="form-group">
+                    <label for="name">Nom</label>
+                    <input type="text" id="name" placeholder="Votre nom">
+                    <small id="nameError" class="error-message"></small>
+                </div>
+
+                <div class="form-group">
+                    <label for="email">Email</label>
+                    <input type="email" id="email" placeholder="votre@email.com">
+                    <small id="emailError" class="error-message"></small>
+                </div>
+
+                <div class="form-group">
+                    <label for="message">Message</label>
+                    <textarea id="message" placeholder="Votre message..."></textarea>
+                    <small id="messageError" class="error-message"></small>
+                </div>
+
+                <button type="submit" class="btn-submit">Envoyer</button>
+                <p id="successMessage" class="success-message"></p>
+            </form>
+        </div>
+
+
+    </main>
+
+    <button id="scrollToTop" class="scroll-top-btn" aria-label="Remonter en haut">
+        <i class="fas fa-arrow-up"></i>
+    </button>
+
+    <!-- Footer -->
+    <footer>
+        <p>© 2025 Portfolio Rafael Système d'Information - Tous droits réservés</p>
+    </footer>
+
+    <script src="main.js"></script>
+</body>
+</html>
